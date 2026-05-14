@@ -1532,7 +1532,8 @@ nav{
     }
 
     .circle{
-     padding-left: 0px;
+     padding-left: 5px;
+     gap: 3px;
     }
    
     .products {
