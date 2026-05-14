@@ -1489,6 +1489,13 @@ text-decoration: none;
         margin: 0 !important;
         border-radius: 10px;
     }
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    
+}
 
     .bottem {
         position: relative;
