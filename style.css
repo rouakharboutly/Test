@@ -1531,6 +1531,9 @@ nav{
         justify-content: center;
     }
 
+    .circle{
+        margin-left: 5px;
+    }
    
     .products {
         flex-direction: column;
