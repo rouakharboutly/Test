@@ -1637,6 +1637,24 @@ nav{
         gap: 40px;
     }
     .end-one, .end-two, .end-three, .end-four { margin: 0 auto; }
+    .brands{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    .brand1,.brand2,.brand3,.brand4,.brand5{
+        margin: 0;
+        width: 70px;
+        height: auto;
+    }
+     .brand1 img,.brand2 img,.brand3 img,.brand4 img,.brand5 img{
+        width: 100%;
+        height: auto;
+     }
 }
 
 
