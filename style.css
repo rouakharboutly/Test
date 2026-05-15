@@ -1598,14 +1598,11 @@ margin-left: 5px;
         margin-top: 10px;
     }
 
-.list{
-        display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
- text-align: center;
- margin-left: 5px;
- width: 100%;
+.all-button{
+     margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
     .glowing { grid-template-columns: 1fr; }
 .photos2 {
