@@ -1527,7 +1527,7 @@ text-decoration: none;
         flex-direction: column;
         align-items: center;
         margin-left: 0;
-        gap: 5px;
+     
     }
     .all-button{
         display: flex;
