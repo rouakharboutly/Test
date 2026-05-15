@@ -1602,7 +1602,8 @@ margin-left: 5px;
      margin-top: 10px;
     margin-bottom: 15px;
     margin-left: 5px;
-    margin-right: 5px;
+gap: 5px;
+width: 100%;
 }
     .glowing { grid-template-columns: 1fr; }
 .photos2 {
