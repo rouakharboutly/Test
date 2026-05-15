@@ -1432,7 +1432,7 @@ text-decoration: none;
 
 
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     
     /* 1. السكشن الأساسي اللي فيه الصور (Hero Section) */
     .cont {
@@ -1539,7 +1539,7 @@ text-decoration: none;
     .yy { font-size: 35px !important; }
     .box-image img { width: 85px !important; height: 110px !important; }
     .circle { flex-direction: column !important; align-items: center !important; }
-}
+} */
 
 
 
