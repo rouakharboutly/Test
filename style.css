@@ -1639,7 +1639,7 @@ nav{
     .end-one, .end-two, .end-three, .end-four { margin: 0 auto; }
     .brands{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
         width: 100%;
