@@ -1597,13 +1597,28 @@ margin-left: 5px;
         position: static;
         margin-top: 10px;
     }
+    .list{
+        flex-direction: column;
+        margin-left:20px ;
+        align-items: center;
+        gap: 5px;
+    }
 
 .all-button{
-     margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-gap: 5px;
-width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ gap: 10px;
+ margin-right: 0;
+ width: 100%;
+}
+.all-button button{
+    width: 80px;
+    font-size: 14px;
+}
+.list a{
+    text-align: center;
+    margin-right: 0;
 }
     .glowing { grid-template-columns: 1fr; }
 .photos2 {
