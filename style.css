@@ -235,8 +235,12 @@ font-weight: 550;
    align-items: center;
    padding: 20px 20px;
    width: 100%;
-  
+
+
+
   box-sizing: border-box;
+
+
 
 
     }
@@ -1428,118 +1432,180 @@ text-decoration: none;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-/* --- كود الشاشات المتوسطة والصغيرة (التابلت والموبايل) --- */
-
-
-
-/* @media screen and (max-width: 768px) {
+ @media screen and (max-width:600px) {
     
-    /* 1. السكشن الأساسي اللي فيه الصور (Hero Section) */
+    .log-in {
+        display: flex;
+        flex-direction: column; 
+        height: auto;
+        grid-template-areas: none;
+    }
+    .img1 {
+        order: -1; 
+        height: 300px;
+        width: 100%;
+        border-bottom-right-radius: 150px;
+        object-fit: cover;
+    }
+    .title, .phrase, form {
+        margin-left: 0;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .input-email, .input-pass, .log-in .login {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    
+    .page1 {
+        height: auto; 
+        min-height: 100vh;
+    }
     .cont {
-        display: flex !important;
-        flex-direction: column !important;
-        height: auto !important; /* خليناه يطول عشان ما تطلع الصور براه */
-        position: relative !important;
-        overflow: visible !important;
-        padding-bottom: 50px !important; /* مسافة أمان عشان الصور ما تدق باللي تحتها */
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: center;
     }
-
-    /* 2. فك تداخل الصور (مهم جداً) */
+    .card {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .card h3, .card .tt, .yy, .card p { margin-left: 0; }
+    
+    
     .box-image {
-        position: static !important; /* هيك الصور رح تقعد جوا السكشن تبعها غصب عنها */
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        height: auto !important;
-        margin: 20px auto !important;
-        gap: 10px !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        margin-top: 30px;
+        gap: 10px;
+        position: relative;
     }
-
     .box-image img {
-        position: static !important; /* إلغاء التداخل فوق بعض */
-        width: 100px !important;
-        height: 130px !important;
+        position: static !important; 
+        width: 80px !important;      
+        height: 100px !important;
         margin: 0 !important;
-        transform: none !important;
+        border-radius: 10px;
     }
 
-    /* 3. السكشن الأحمر (bottem) - منعه من الارتفاع فوق الصور */
+
     .bottem {
-        clear: both !important; /* أمر برمج بيمنع العناصر تطلع فوق بعضها */
-        position: relative !important;
-        display: flex !important;
-        flex-direction: column !important;
-        height: auto !important;
-        padding: 40px 10px !important;
-        margin-top: 20px !important;
-        gap: 30px !important;
-        z-index: 10 !important;
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding: 40px 20px;
+        gap: 35px; 
+        margin-top: 20px;
+        background-color: rgb(141, 33, 53);
+    }
+   
+    .bottem .left, .bottem .number, .bottem .stars {
+        position: static;
+        width: 100%;
+        text-align: center;
+        transform: none;
+    }
+    .left p, .left span, .number h2, .number p, .number span, .stars h3, .stars p, .rating-box {
+        position: static;
+        display: block;
+        margin: 5px auto;
+    }
+    .rating-box {
+        display: flex;
+        justify-content: center;
     }
 
-    .bottem .left, .bottem .number, .bottem .stars, .bottem h3, .bottem .star, .rating-box {
-        position: static !important;
-        transform: none !important;
-        margin: 10px auto !important;
-        text-align: center !important;
-        width: 100% !important;
+   
+    .products {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
-
-    .left p, .left span, .number h2, .number p, .number span, .stars p {
-        position: static !important;
-        display: block !important;
-        margin: 5px 0 !important;
-    }
-
-    /* 4. الأزرار المعطلة (all-button) */
-    .list {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        margin: 40px 10px !important;
-    }
-
-    .all-button {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 10px !important;
-        margin-right: 0 !important;
-        width: 100% !important;
-    }
-
-    .all-button button {
-        width: auto !important;
-        padding: 5px 15px !important;
-    }
-
-    /* 5. المنتجات (عرض واحد واحد) */
-    .all-product {
-        grid-template-columns: 1fr !important;
+    .product1, .product2, .product3 {
         width: 90% !important;
-        margin: 0 auto !important;
+        height: auto !important;
+        padding-bottom: 20px;
+    }
+    .product1 .pric, .product2 .pric, .product3 .pric {
+        position: static;
+        margin-top: 10px;
     }
 
-    /* 6. الهيدر واللوجو */
-    header {
-        flex-direction: column !important;
-        text-align: center !important;
-        gap: 15px !important;
+   
+    .big-about {
+        flex-direction: column;
     }
-
-    .nav-bar {
-        gap: 10px !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
+    .left-about {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
+    .left-about img {
+        width: 100%;
+        height: 120px;
+        margin: 0 !important;
+    }
+    .right-about {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin-left: 0;
+    }
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
+   
+    .all-product {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .ordinary {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
 
-/* 7. للشاشات الصغيرة جداً (الموبايل العادي) */
-@media screen and (max-width: 480px) {
-    .title { font-size: 1.8rem !important; }
-    .yy { font-size: 35px !important; }
-    .box-image img { width: 85px !important; height: 110px !important; }
-    .circle { flex-direction: column !important; align-items: center !important; }
-} */
+   
+    .photos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .photo1 h3, .photo1 .work, .photo2 h3, .photo2 .work, .photo3 h3, .photo3 .work {
+        position: static;
+        margin-top: 10px;
+    }
+
+
+    .glowing { grid-template-columns: 1fr; }
+.photos2 {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .photos2 img {
+        position: static !important;
+        width: 70px !important;
+        height: 70px !important;
+        margin: 5px;
+    }
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    .end-one, .end-two, .end-three, .end-four { margin: 0 auto; }
+}
 
 
 
