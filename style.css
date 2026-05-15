@@ -1428,429 +1428,184 @@ text-decoration: none;
     margin-top: 40px;
     margin-bottom: 40px;
 }
- @media screen and (max-width: 480px) {
-    
-    .log-in {
-        display: flex;
-        flex-direction: column; 
-        height: auto;
-        /* grid-template-areas: none; */
-    }
-    .img1 {
-          /* display: flex;
-        flex-direction: column;  */
-        /* order: -1;  */
-        height: 300px;
-        width: 100%;
-        border-bottom-right-radius: 150px;
-        object-fit: cover;
-    }
-    .title, .phrase, form {
-        margin-left: 0;
-        padding: 10px 20px;
-        text-align: center;
-    }
-    .input-email, .input-pass, .log-in .login {
-        width: 100%;
-        margin: 10px auto;
-    }
-
-    
-    .page1 {
-        height: auto; 
-        min-height: 100vh;
-    }
-    .cont {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        align-items: center;
-    }
-    .card {
-        margin-left: 0;
-        text-align: center;
-        width: 100%;
-    }
-    .card h3, .card .tt, .yy, .card p { margin-left: 0; }
-    
-    
-    .box-image {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        margin-top: 30px;
-        gap: 10px;
-        position: relative;
-    }
-    .box-image img {
-        position: static !important; 
-        width: 80px !important;      
-        height: 100px !important;
-        margin: 0 !important;
-        border-radius: 10px;
-    }
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    
-}
-nav{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
+/* --- كود الشاشات المتوسطة والصغيرة (التابلت والموبايل) --- */
 
 
 
-    .bottem {
-        position: relative;
-        height: auto;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        padding: 40px 20px;
-        gap: 35px; 
-        margin-top: 20px;
-        background-color: rgb(141, 33, 53);
-    }
-   
-    .bottem .left, .bottem .number, .bottem .stars {
-        position: static;
-        width: 100%;
-        text-align: center;
-        transform: none;
-    }
-    .left p, .left span, .number h2, .number p, .number span, .stars h3, .stars p, .rating-box {
-        position: static;
-        display: block;
-        margin: 5px auto;
-        text-align: center;
-    }
-    .rating-box {
-        display: flex;
-        justify-content: center;
-    }
-
-    .circle1{
-margin-left: 5px;
-
-    }
-   
-    .products {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    .product1, .product2, .product3 {
-        width: 90% !important;
-        height: auto !important;
-        padding-bottom: 20px;
-    }
-    .product1 .pric, .product2 .pric, .product3 .pric {
-        position: static;
-        margin-top: 10px;
-    }
-
-   
-    .big-about {
-        flex-direction: column;
-    }
-    .left-about {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-    .left-about img {
-        width: 100%;
-        height: 120px;
-        margin: 0 !important;
-    }
-    .right-about {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 20px;
-        margin-left: 0;
-    }
-
-   
-    .all-product {
-        grid-template-columns: 1fr;
-        width: 90%;
-        margin: 30px auto;
-    }
-    .ordinary {
-        width: 100% !important;
-        margin-bottom: 20px;
-    }
-
-   
-    .photos {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .photo1 h3, .photo1 .work, .photo2 h3, .photo2 .work, .photo3 h3, .photo3 .work {
-        position: static;
-        margin-top: 10px;
-    }
-    .list{
-        flex-direction: column;
-        margin-left:20px ;
-        align-items: center;
-        gap: 5px;
-    }
-
-.all-button{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
- gap: 10px;
- margin-right: 0;
- width: 100%;
-}
-.all-button button{
-    width: 80px;
-    font-size: 14px;
-}
-.list a{
-    text-align: center;
-    margin-right: 0;
-}
-    .glowing { grid-template-columns: 1fr; }
-.photos2 {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
-    .photos2 img {
-        position: static !important;
-        width: 70px !important;
-        height: 70px !important;
-        margin: 5px;
-    }
-    footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 40px;
-    }
-    .end-one, .end-two, .end-three, .end-four { margin: 0 auto; }
-}
 @media screen and (max-width: 768px) {
-    
+    /* 1. إصلاح صفحة تسجيل الدخول */
     .log-in {
-        display: flex;
-        flex-direction: column; 
-        height: auto;
-        /* grid-template-areas: none; */
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow: visible !important;
     }
     .img1 {
-          /* display: flex;
-        flex-direction: column;  */
-        /* order: -1;  */
-        height: 300px;
-        width: 100%;
-        border-bottom-right-radius: 150px;
-        object-fit: cover;
+        position: static !important;
+        height: 250px !important;
+        width: 100% !important;
+        border-bottom-right-radius: 50px !important;
+        object-fit: cover !important;
     }
-    .title, .phrase, form {
-        margin-left: 0;
-        padding: 10px 20px;
-        text-align: center;
+    .title, .phrase, form, .remember, .social-login {
+        position: static !important;
+        margin: 15px 20px !important;
+        width: auto !important;
+        text-align: center !important;
+        display: block !important;
     }
+    .title { font-size: 2.2rem !important; }
     .input-email, .input-pass, .log-in .login {
-        width: 100%;
-        margin: 10px auto;
+        width: 100% !important;
+        margin: 10px 0 !important;
     }
 
-    
-    .page1 {
-        height: auto; 
-        min-height: 100vh;
+    /* 2. الهيدر واللوجو */
+    header {
+        flex-direction: column !important;
+        padding: 15px !important;
+        gap: 15px !important;
     }
+    .nav-bar {
+        gap: 10px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    /* 3. سيكشن الهيرو (الصور المتداخلة) */
     .cont {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        align-items: center;
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 20px !important;
+        align-items: center !important;
     }
     .card {
-        margin-left: 0;
-        text-align: center;
-        width: 100%;
+        margin: 0 !important;
+        text-align: center !important;
+        width: 100% !important;
     }
-    .card h3, .card .tt, .yy, .card p { margin-left: 0; }
-    
-    
+    .card .tt, .yy, .card p, .shop-now, .circle {
+        margin: 10px auto !important;
+        position: static !important;
+    }
     .box-image {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        margin-top: 30px;
-        gap: 10px;
-        position: relative;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        height: auto !important;
+        width: 100% !important;
+        margin: 30px 0 !important;
+        gap: 10px !important;
     }
     .box-image img {
-        position: static !important; 
-        width: 80px !important;      
-        height: 100px !important;
+        position: static !important; /* إلغاء التداخل */
+        width: 110px !important;
+        height: 140px !important;
         margin: 0 !important;
-        border-radius: 10px;
+        transform: none !important;
+        box-shadow: none !important;
     }
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    
-}
-nav{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
 
-
-
+    /* 4. السيكشن الأحمر (bottem) - إصلاح شامل */
     .bottem {
-        position: relative;
-        height: auto;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        padding: 40px 20px;
-        gap: 35px; 
-        margin-top: 20px;
-        background-color: rgb(141, 33, 53);
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 40px 20px !important;
+        gap: 30px !important;
+        position: static !important;
     }
-   
-    .bottem .left, .bottem .number, .bottem .stars {
-        position: static;
-        width: 100%;
-        text-align: center;
-        transform: none;
+    .bottem .left, .bottem .number, .bottem .stars, .bottem h3, .bottem .star, .rating-box {
+        position: static !important;
+        transform: none !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        text-align: center !important;
+        color: #fff !important;
     }
-    .left p, .left span, .number h2, .number p, .number span, .stars h3, .stars p, .rating-box {
-        position: static;
-        display: block;
-        margin: 5px auto;
-        text-align: center;
+    .left p, .left span, .number h2, .number p, .number span, .stars p {
+        position: static !important;
+        display: block !important;
+        margin: 5px 0 !important;
     }
     .rating-box {
-        display: flex;
-        justify-content: center;
+        display: flex !important;
+        justify-content: center !important;
+        margin: 10px 0 !important;
     }
 
-    .circle1{
-margin-left: 5px;
-
+    /* 5. قسم المنتجات والأزرار (all-button) */
+    .list {
+        flex-direction: column !important;
+        margin: 30px 20px !important;
+        align-items: center !important;
+        gap: 20px !important;
     }
-   
-    .products {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    .product1, .product2, .product3 {
-        width: 90% !important;
-        height: auto !important;
-        padding-bottom: 20px;
-    }
-    .product1 .pric, .product2 .pric, .product3 .pric {
-        position: static;
-        margin-top: 10px;
-    }
-
-   
-    .big-about {
-        flex-direction: column;
-    }
-    .left-about {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-    .left-about img {
-        width: 100%;
-        height: 120px;
+    .all-button {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
         margin: 0 !important;
+        width: 100% !important;
     }
-    .right-about {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 20px;
-        margin-left: 0;
+    .all-button button {
+        margin: 0 !important;
+        width: auto !important;
+        padding: 8px 15px !important;
     }
-
-   
     .all-product {
-        grid-template-columns: 1fr;
-        width: 90%;
-        margin: 30px auto;
+        grid-template-columns: 1fr !important; /* منتج واحد في كل سطر */
+width: 90% !important;
+        margin: 0 auto !important;
+        gap: 30px !important;
     }
     .ordinary {
         width: 100% !important;
-        margin-bottom: 20px;
+        margin: 0 auto !important;
+        height: auto !important;
+        padding-bottom: 20px !important;
     }
 
-   
+    /* 6. قسم الصور والآراء (Photos) */
     .photos {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: 1fr !important;
+        padding: 0 20px !important;
+    }
+    .photo1, .photo2, .photo3 {
+        padding: 20px !important;
+        height: auto !important;
     }
     .photo1 h3, .photo1 .work, .photo2 h3, .photo2 .work, .photo3 h3, .photo3 .work {
-        position: static;
-        margin-top: 10px;
-    }
-    .list{
-        flex-direction: column;
-        margin-left:20px ;
-        align-items: center;
-        gap: 5px;
-    }
-
-.all-button{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
- gap: 10px;
- margin-right: 0;
- width: 100%;
-}
-.all-button button{
-    width: 80px;
-    font-size: 14px;
-}
-.list a{
-    text-align: center;
-    margin-right: 0;
-}
-    .glowing { grid-template-columns: 1fr; }
-.photos2 {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
-    .photos2 img {
         position: static !important;
-        width: 70px !important;
-        height: 70px !important;
-        margin: 5px;
+        margin: 10px 0 !important;
+        display: block !important;
     }
+
+    /* 7. الفوتر (Footer) */
     footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 40px;
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        padding: 40px 20px !important;
     }
-    .end-one, .end-two, .end-three, .end-four { margin: 0 auto; }
+    .end-one, .end-two, .end-three, .end-four {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
 }
 
+/* 8. تعديلات إضافية للشاشات الصغيرة جداً (480px) */
+@media screen and (max-width: 480px) {
+    .title { font-size: 1.8rem !important; }
+    .card .tt { font-size: 30px !important; }
+    .yy { font-size: 35px !important; }
+    .box-image img { width: 90px !important; height: 120px !important; }
+    .sub { flex-direction: column !important; height: auto !important; }
+    .sub input { width: 100% !important; margin-bottom: 10px !important; }
+    .sub button { width: 100% !important; margin: 0 !important; }
+}
 
 
 
