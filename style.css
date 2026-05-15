@@ -1598,7 +1598,12 @@ margin-left: 5px;
         margin-top: 10px;
     }
 
-
+.list{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
     .glowing { grid-template-columns: 1fr; }
 .photos2 {
         display: flex;
