@@ -1545,8 +1545,12 @@ text-decoration: none;
 .all-button a {
 margin-left: 10px;
 }
-
-
+.list h1{
+    margin-left: 0;
+}
+.list p{
+    margin-left: 0;
+}
    
     .products {
         flex-direction: column;
