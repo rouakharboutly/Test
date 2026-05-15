@@ -1533,7 +1533,7 @@ text-decoration: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
         margin-left: 0;
         width: 100%;
     }
@@ -1542,7 +1542,9 @@ text-decoration: none;
         margin-left: 0;
      text-align: center;
     }
-
+.all-button a {
+margin-left: 10px;
+}
 
 
    
